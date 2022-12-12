@@ -1,0 +1,143 @@
+{
+  "user": [
+    {
+      "id": "0EHRs0a",
+      "name": "Rocio",
+      "email": "rocio@mail.com",
+      "password": "1234"
+    },
+    {
+      "id": "lrupFcc",
+      "name": "Marta",
+      "email": "marta@mail.com",
+      "password": "5678"
+    },
+    {
+      "id": "cVsW9eQ",
+      "name": "Admin",
+      "email": "admin@mail.com",
+      "password": "9876"
+    },
+    {
+      "id": "8xKddPR",
+      "name": "Lalo",
+      "email": "lalo@mail.com",
+      "password": "este"
+    }
+  ],
+  "text": [
+    {
+      "id": "XZw7Ce4",
+      "category": "Pasado",
+      "date": "December 11th 2022",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "una casa estaba llena de piedras y hojas"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "amarillas por el otoño y arremolinadas en un rincón"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "un rincón donde hacía tiempo jugaban los niños,"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "esos niños del maizal que salían por las noches a buscar nuevas víctimas"
+        }
+      ]
+    },
+    {
+      "id": "OjDpd3S",
+      "category": "Presente",
+      "date": "December 11th 2022",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "un señor camina muy rápido debajo de la lluvia"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "una lluvia ácida pero de ácido cítrico porque llueven mandarinas"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "las mandarinas que ya no me gustan tanto como antes, prefiero una butifarra"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "butifarra de huevo, de lo mejor que ha dado esta tierra"
+        }
+      ]
+    },
+    {
+      "id": "_vUZ67d",
+      "category": "Futuro",
+      "date": "December 11th 2022",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "habrá alguna vez un pato que reniegue de ser blanco porque le resulte muy sucio,"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "sucio como el parabrisas del coche cuando no lo lavan bien luego de la lluvia."
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "Lluvia y montañas nevadas solían ser un espectáculo imperdible, sobre todo durante el invierno, pero ahora ya no"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "será cuando más me agrade salir a pasear."
+        }
+      ]
+    },
+    {
+      "id": "poFGT-B",
+      "category": "Futuro",
+      "date": "December 11th 2022",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "será amarilla, o quizás verde la bici"
+        }
+      ]
+    },
+    {
+      "id": "ahs0ENT",
+      "category": "Presente",
+      "date": "December 11th 2022",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "ahora mismo no sabría qué decirte"
+        }
+      ]
+    },
+    {
+      "id": "ouRVDTC",
+      "category": "Pasado",
+      "date": "December 11th 2022",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "puede ser que en algún momento sí que se viera el otro lado"
+        }
+      ]
+    },
+    {
+      "id": "vtrfaSj",
+      "category": "Pasado",
+      "date": "December 11th 2022",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "cuando despertó el dinosaurio aún seguía allí"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<form [formGroup]="sentenceForm" (ngSubmit)="saveSentence()">
+  <div class="mb-3 p-5">
+    <div class="p-3">
+      <p class="hiddenSentence">{{ lastSentence }}</p>
+      <p>
+       <strong>{{ currentText.sentences | words }}</strong>
+      </p>
+      <p>Categoría: {{ currentText.category }}</p>
+      <p>A {{ 4 - currentText.sentences.length }} de terminar</p>
+      <label for="inputSentence" class="form-label"
+        >Escribe tu continuación del texto a partir de la palabra visible</label
+      >
+      <textarea
+        class="form-control"
+        formControlName="userSentence"
+        id="inputSentence"
+        rows="3"
+      ></textarea>
+      <button type="submit" class="btn shadow mt-2">Guardar</button>
+    </div>
+  </div>
+</form>
+<!-- <button type="button" class="btn btn-danger" (click)="deleteText()">Eliminar texto</button> -->

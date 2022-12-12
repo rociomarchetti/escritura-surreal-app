@@ -1,0 +1,6 @@
+form {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}

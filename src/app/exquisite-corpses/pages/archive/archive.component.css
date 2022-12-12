@@ -1,0 +1,13 @@
+.text {
+    border: 5px solid rgb(160, 154, 154);
+    font-size: large;
+    padding: 1em;
+    color: aliceblue;
+    background-color: black;
+}
+
+/* .archive {
+    background-image: url('src\assets\background-image.jpg');
+    background-size: cover;
+    width: 100%;
+} */

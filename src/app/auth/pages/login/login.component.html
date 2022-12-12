@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-4 ms-2">
+            <form [formGroup]="userForm" (ngSubmit)="login()">
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="inputEmail" formControlName="email">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" formControlName="password">
+                </div>
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+              </form>
+        </div>
+    
+    </div>
+</div>
+

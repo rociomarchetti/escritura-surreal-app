@@ -1,0 +1,10 @@
+.logged-in-nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.logged-in-nav p,
+span {
+  color: darkgray;
+}

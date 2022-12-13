@@ -1,9 +1,27 @@
 <div class="container archive">
-  <div class="row mb-5 mt-3">
-    <div *ngFor="let text of finalTextsList" class="col-3 ms-5">
-      <div class="card p-3 mt-3">
+  <div>
+    <h4>Filtrar por relatos del</h4>
+    <button (click)="filterPresent()">Presente</button>
+    <button class="m-3" (click)="filterPast()">Pasado</button>
+    <button (click)="filterFuture()">Futuro</button>
+    <button class="m-3" (click)="deleteFilter()">Quitar filtro?</button>
+  </div>
+
+  <ng-template [ngIf]="filter">
+    <div *ngFor="let text of filteredTextsList" class="col-3 ms-5">
+      <div class="card p-3 mt-2">
         <p class="card-text">{{ text.sentences | texts }}</p>
       </div>
     </div>
-  </div>
+  </ng-template>
+
+  <ng-template [ngIf]="!filter">
+    <div class="row mb-5 mt-2">
+      <div *ngFor="let text of finalTextsList" class="col-3 ms-5">
+        <div class="card p-3 mt-2">
+          <p class="card-text">{{ text.sentences | texts }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-template>
 </div>

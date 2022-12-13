@@ -1,3 +1,4 @@
+import { AuthService } from './../../../auth/services/auth.service';
 
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -16,9 +17,11 @@ export class CurrentProjectComponent {
   getUnifishedTexts(): FinalText[] {
     this.TextsService.getTexts().subscribe((resp) =>
       resp.forEach((element) => {
-        if (element.sentences.length < 4) {
+        if ( element.sentences.length < 4 && 
+          element.sentences[element.sentences.length - 1].userId !=
+          this.AuthService.loggedUserId 
+        ) {
           this.unfinishedTexts.push(element);
-          console.log(element.sentences[element.sentences.length - 1].sentence)
         }
       })
     );
@@ -30,5 +33,9 @@ export class CurrentProjectComponent {
     console.log(this.unfinishedTexts);
   }
 
-  constructor(private TextsService: TextsService, private activatedRoute: ActivatedRoute) {}
+  constructor(
+    private TextsService: TextsService,
+    private activatedRoute: ActivatedRoute,
+    private AuthService: AuthService
+  ) {}
 }

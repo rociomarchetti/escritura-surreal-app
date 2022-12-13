@@ -38,6 +38,7 @@ export class TextComponent {
     this.TextsService.updateText(this.currentText).subscribe((text) =>
       console.log('Actualizando', text)
     );
+    this.Router.navigate([''])
   }
 
   deleteText() {

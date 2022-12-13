@@ -5,14 +5,15 @@
         <div class="col-4 ms-2">
             <form [formGroup]="userForm" (ngSubmit)="login()">
                 <div class="mb-3">
-                  <label for="inputEmail" class="form-label">Email address</label>
+                  <label for="inputEmail" class="form-label">Correo electrónico</label>
                   <input type="email" class="form-control" id="inputEmail" formControlName="email">
                 </div>
                 <div class="mb-3">
-                  <label for="inputPassword" class="form-label">Password</label>
+                  <label for="inputPassword" class="form-label">Contraseña</label>
                   <input type="password" class="form-control" id="inputPassword" formControlName="password">
+                  <app-verify-password></app-verify-password>
                 </div>
-                <button type="submit" class="btn btn-outline-dark">Submit</button>
+                <button type="submit" class="btn btn-outline-dark">Enviar</button>
               </form>
         </div>
     

@@ -3,12 +3,12 @@
     <div class="col-4 ms-2">
       <form [formGroup]="newUserForm" (ngSubmit)="createNewUser()">
         <div class="mb-3">
-          <label for="inputName" class="form-label">Name</label>
+          <label for="inputName" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="inputName" formControlName="newUserName"/>
         </div>
         <div class="mb-3">
           <label for="inputEmail" class="form-label"
-            >Email address</label
+            >Correo electrónico</label
           >
           <input
             type="email"
@@ -18,11 +18,11 @@
             formControlName="newUserEmail"
           />
           <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
+            Nunca compartiremos tu correo con nadie más.
           </div>
         </div>
         <div class="mb-3">
-          <label for="inputPassword" class="form-label">Password</label>
+          <label for="inputPassword" class="form-label">Contraseña</label>
           <input
             type="password"
             class="form-control"
@@ -30,7 +30,7 @@
             formControlName="newUserPassword"
           />
         </div>
-        <button type="submit" class="btn btn-outline-dark">Submit</button>
+        <button type="submit" class="btn btn-outline-dark">Guardar</button>
       </form>
     </div>
   </div>

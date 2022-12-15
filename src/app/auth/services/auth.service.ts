@@ -13,6 +13,7 @@ export class AuthService {
   loggedUser: User | undefined; /* lo uso para el register */
   loggedUserName: string = '';
   loggedUserId: string = '';
+  adminSession: boolean = false;
 
   /* Users CRUD methods */
 
@@ -41,8 +42,8 @@ export class AuthService {
   checkAuth(): Observable<boolean> {
     if (!localStorage.getItem('token')) {
       return of(false);
-    } 
-    let id = localStorage.getItem('token')
+    }
+    let id = localStorage.getItem('token');
     return this.http.get<User>(`http://localhost:3000/user/${id}`).pipe(
       map((auth) => {
         this.loggedUserName = auth.name;
@@ -51,14 +52,16 @@ export class AuthService {
     );
   }
 
-  saveSession(id:string): Observable<User> {
+  saveSession(id: string): Observable<User> {
+    if (id === 'cVsW9eQ') {
+      this.adminSession = true;
+    }
     this.loginControl = true;
-    return this.http.get<User>(`http://localhost:3000/user/${id}`)
-    .pipe(
+    return this.http.get<User>(`http://localhost:3000/user/${id}`).pipe(
       tap((user) => localStorage.setItem('token', user.id)),
-      tap((user) => localStorage.setItem('name', user.name )),
+      tap((user) => localStorage.setItem('name', user.name)),
       tap((resp) => localStorage.setItem('control', 'true')),
-      tap((user) => this.loggedUserName = user.name)
+      tap((user) => (this.loggedUserName = user.name))
     );
   }
 
@@ -67,23 +70,21 @@ export class AuthService {
     localStorage.removeItem('name');
     localStorage.removeItem('control');
     this.loginControl = false;
-    this.router.navigate([''])
+    this.adminSession = false;
+    this.router.navigate(['']);
   }
 
   /*  */
 
-
-
   constructor(private http: HttpClient, private router: Router) {
-    if( localStorage.getItem('token')) {
-      this.loggedUserId = localStorage.getItem('token')!  
+    if (localStorage.getItem('token')) {
+      this.loggedUserId = localStorage.getItem('token')!;
     }
-    if( localStorage.getItem('name')) {
-      this.loggedUserName = localStorage.getItem('name')!
+    if (localStorage.getItem('name')) {
+      this.loggedUserName = localStorage.getItem('name')!;
     }
-    if(localStorage.getItem('control')) {
+    if (localStorage.getItem('control')) {
       this.loginControl = true;
     }
-
   }
 }

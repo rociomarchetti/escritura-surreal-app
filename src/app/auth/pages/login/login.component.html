@@ -3,7 +3,7 @@
     <div class="row">
 
         <div class="col-4 ms-2">
-            <form [formGroup]="userForm" (ngSubmit)="login()">
+            <form [formGroup]="userForm" (ngSubmit)="login()" autocomplete="off">
                 <div class="mb-3">
                   <label for="inputEmail" class="form-label">Correo electrónico</label>
                   <input type="email" class="form-control" id="inputEmail" formControlName="email">

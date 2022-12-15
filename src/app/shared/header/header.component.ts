@@ -9,6 +9,10 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
+  get adminSession() {
+    return this.AuthService.adminSession
+  }
+
   get loginControl() {
     return this.AuthService.loginControl;
   }

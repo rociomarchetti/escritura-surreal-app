@@ -1,3 +1,4 @@
+import { AuthService } from './../../../auth/services/auth.service';
 import { FinalText, Sentence } from './../../interfaces/texts.interface';
 
 import { TextsService } from './../../services/texts.service';
@@ -41,6 +42,14 @@ export class ArchiveComponent implements OnInit {
     return this.filter = false;
   }
 
+  get adminSession() {
+    return this.AuthService.adminSession
+  }
+
+  deleteText(id:string) {
+    console.log(id)
+  }
+
   ngOnInit(): void {
     this.TextsService.getTexts().subscribe((texts) =>
       texts.forEach((element) => {
@@ -52,5 +61,5 @@ export class ArchiveComponent implements OnInit {
     );
   }
 
-  constructor(private TextsService: TextsService) {}
+  constructor(private TextsService: TextsService, private AuthService: AuthService) {}
 }

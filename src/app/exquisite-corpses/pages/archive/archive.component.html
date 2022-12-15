@@ -20,8 +20,13 @@
       <div *ngFor="let text of finalTextsList" class="col-3 ms-5">
         <div class="card p-3 mt-2">
           <p class="card-text">{{ text.sentences | texts }}</p>
+          <ng-template [ngIf]="adminSession">
+            <button class="btn btn-danger" (click)="deleteText( text.id )">Eliminar texto</button>
+              <button class="btn btn-danger" (click)="deleteText( text.id )">Eliminar texto</button>
+          </ng-template>
+          
         </div>
       </div>
     </div>
-  </ng-template>
+  </ng-template>  
 </div>

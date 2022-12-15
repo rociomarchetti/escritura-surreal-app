@@ -22,17 +22,34 @@
             </li>
           </ul>
         </div>
-        <div class="logged-in-nav col-12 col-md-3" *ngIf="loginControl">
-          <p class="me-2">Hola, {{ loggedUserName }}.</p>
-          <span
-            class="logout"
-            type="button"
-            (click)="logout()"
-            routerLink="home"
-          >
-            cerrar sesión
-          </span>
-        </div>
+        <ng-template [ngIf]="!adminSession">
+          <div class="logged-in-nav col-12 col-md-3" *ngIf="loginControl">
+            <p class="me-2">Hola, {{ loggedUserName }}.</p>
+            <span
+              class="logout"
+              type="button"
+              (click)="logout()"
+              routerLink="home"
+            >
+              cerrar sesión
+            </span>
+          </div>
+        </ng-template>
+        
+        <ng-template [ngIf]="adminSession">
+          <div class="logged-in-nav col-12 col-md-3" *ngIf="loginControl">
+            <p class="me-2">SESIÓN ADMINISTRACIÓN</p>
+            <span
+              class="logout"
+              type="button"
+              (click)="logout()"
+              routerLink="home"
+            >
+              cerrar sesión
+            </span>
+          </div>
+        </ng-template>
+        
         <div>
           <ul class="navbar-nav">
             <li class="nav-item">

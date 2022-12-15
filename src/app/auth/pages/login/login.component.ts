@@ -1,5 +1,5 @@
 import { User } from './../../interfaces/auth.interface';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from './../../services/auth.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -30,16 +30,15 @@ export class LoginComponent {
           a.password === this.userForm.value.password
         );
       });
-
       if (user) {
-        alert('you are successfully login');
+        /* alert('you are successfully login'); */
         console.log(user);
         this.saveActiveSession(user);
-        this.userForm.reset();
-        this.router.navigate(['']);
+        /* this.userForm.reset(); */
       } else {
         alert('User Not Found');
       }
+      this.router.navigate(['texts/archive']);
     });
   }
 

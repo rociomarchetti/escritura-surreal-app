@@ -1,10 +1,12 @@
-import { AuthService } from './../../../auth/services/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { TextsService } from './../../services/texts.service';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
-import { FinalText, Sentence } from './../../interfaces/texts.interface';
 import { Component } from '@angular/core';
 import { switchMap } from 'rxjs';
+
+import { FinalText, Sentence } from './../../interfaces/texts.interface';
+
+import { TextsService } from './../../services/texts.service';
+import { AuthService } from './../../../auth/services/auth.service';
 
 @Component({
   selector: 'app-text',
@@ -56,7 +58,6 @@ export class TextComponent {
           this.currentText.sentences[
             this.currentText.sentences.length - 1
           ].sentence;
-        console.log(this.currentText)
       });
   }
 

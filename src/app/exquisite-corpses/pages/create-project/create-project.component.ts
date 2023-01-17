@@ -1,8 +1,10 @@
-import { AuthService } from './../../../auth/services/auth.service';
-import { FinalText, Sentence } from './../../interfaces/texts.interface';
-import { TextsService } from './../../services/texts.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
+
+import { FinalText, Sentence } from './../../interfaces/texts.interface';
+
+import { AuthService } from './../../../auth/services/auth.service';
+import { TextsService } from './../../services/texts.service';
 
 @Component({
   selector: 'app-create-project',

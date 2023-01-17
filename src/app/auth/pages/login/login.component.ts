@@ -1,9 +1,9 @@
-import { User } from './../../interfaces/auth.interface';
-import { Router, ActivatedRoute } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-import { AuthService } from './../../services/auth.service';
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
+
+import { User } from './../../interfaces/auth.interface';
+import { AuthService } from './../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -18,7 +18,7 @@ export class LoginComponent {
 
   saveActiveSession(user: User) {
     this.AuthService.saveSession(user.id).subscribe((resp) =>
-      console.log('Se han guardado los datos en el localstorage: ', resp)
+      console.log(resp)
     );
   }
 
@@ -31,8 +31,6 @@ export class LoginComponent {
         );
       });
       if (user) {
-        /* alert('you are successfully login'); */
-        console.log(user);
         this.saveActiveSession(user);
         /* this.userForm.reset(); */
       } else {
@@ -45,7 +43,6 @@ export class LoginComponent {
   constructor(
     private fb: FormBuilder,
     private AuthService: AuthService,
-    private router: Router,
-    private http: HttpClient
+    private router: Router
   ) {}
 }

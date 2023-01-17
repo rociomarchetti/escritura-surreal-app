@@ -1,8 +1,79 @@
-
-
-.hero-section {
-  background-image: url("https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/.width-340_r09nq1c.jpg");
-  height: 50rem;
-  margin-bottom: 3rem;
+.home-page-container {
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
 }
 
+.hero-section {
+  background-color: #141414;
+  border-radius: 0%;
+  padding: 5%;
+  height: 90%;
+  width: 100%;
+  margin-top: -1px;
+  margin-bottom: 0%;
+}
+
+.square {
+  margin-top: 3rem;
+  border: 0.5px solid #fbfbfb;
+  padding: 3rem;
+}
+
+h1 {
+  color: #fbfbfb;
+}
+
+.info-section {
+  margin-top: 3rem;
+ /*  background-color: #141414; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 8rem;
+  padding: 2rem;
+}
+
+#first-img {
+  z-index: 1;
+  position: absolute;
+  transform: translate(-35rem, 3rem);
+  filter: grayscale(100%);
+}
+
+#second-img {
+  z-index: 1;
+  position: absolute;
+  transform: translate(38rem, 20rem);
+  filter: grayscale(100%);
+}
+
+.item {
+  background-color: #fbfbfb;
+  width: 100%;
+  border: 0.5px solid #a6a6a6;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1.85rem 2.4rem;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #141414;
+  color: #fbfbfb;
+}
+
+.content-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+#firulete {
+  margin-top: 2rem;
+  width: 5rem;
+}

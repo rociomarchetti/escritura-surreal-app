@@ -1,9 +1,10 @@
-import { User } from './../../interfaces/auth.interface';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { AuthService } from './../../services/auth.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
+
+import { User } from './../../interfaces/auth.interface';
+import { AuthService } from './../../services/auth.service';
 
 @Component({
   selector: 'app-verify-password',
@@ -11,7 +12,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./verify-password.component.css'],
 })
 export class VerifyPasswordComponent {
-  loggedUser: User = {
+/*   loggedUser: User = {
     id: '',
     name: '',
     email: '',
@@ -53,7 +54,7 @@ export class VerifyPasswordComponent {
         alert('Usuario no registrado');
       }
     });
-  }
+  } */
 
   constructor(
     private fb: FormBuilder,

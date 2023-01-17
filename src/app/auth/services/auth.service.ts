@@ -1,9 +1,10 @@
+import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
+
 import { User } from './../interfaces/auth.interface';
-import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',

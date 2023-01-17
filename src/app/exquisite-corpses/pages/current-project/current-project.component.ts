@@ -1,10 +1,9 @@
-import { AuthService } from './../../../auth/services/auth.service';
-
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { FinalText } from './../../interfaces/texts.interface';
 import { TextsService } from './../../services/texts.service';
+import { AuthService } from './../../../auth/services/auth.service';
 
 @Component({
   selector: 'app-current-project',
@@ -30,7 +29,6 @@ export class CurrentProjectComponent {
 
   ngOnInit(): void {
     this.getUnifishedTexts();
-    console.log(this.unfinishedTexts);
   }
 
   constructor(

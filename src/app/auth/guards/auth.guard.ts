@@ -7,8 +7,7 @@ import {
   Route,
   Router,
   RouterStateSnapshot,
-  UrlSegment,
-  UrlTree,
+  UrlSegment
 } from '@angular/router';
 import { Observable, tap } from 'rxjs';
 

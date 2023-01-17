@@ -1,7 +1,8 @@
-import { User } from './../../interfaces/auth.interface';
-import { AuthService } from './../../services/auth.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
+
+import { User } from './../../interfaces/auth.interface';
+import { AuthService } from './../../services/auth.service';
 
 @Component({
   selector: 'app-register',

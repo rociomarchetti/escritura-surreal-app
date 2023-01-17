@@ -1,4 +1,19 @@
-footer {
-    display:inline-block;    
-    color: #9e9e9e;
+.footer {
+  background-color: black;
+  color: antiquewhite;
+  font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  justify-content: flex-end;
+}
+
+p{
+    margin-right: 10rem;
+    /* letter-spacing: 2px; */
 }

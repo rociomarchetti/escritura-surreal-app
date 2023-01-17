@@ -1,5 +1,5 @@
-import { Sentence } from './../interfaces/texts.interface';
 import { Pipe, PipeTransform } from '@angular/core';
+import { Sentence } from './../interfaces/texts.interface';
 
 @Pipe({
   name: 'texts',

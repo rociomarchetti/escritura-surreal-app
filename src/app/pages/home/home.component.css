@@ -24,9 +24,66 @@ h1 {
   color: #fbfbfb;
 }
 
+h4 {
+  color: #fbfbfb8a;
+  margin-top: 1rem;
+}
+
+.square h5 {
+  color: #fbfbfbb0;
+  font-family: 'SF Mono', sans-serif;
+  font-weight: 300; 
+}
+
+.welcome-section {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.welcome-section img {
+  transform: rotate(2turn);
+  margin-top: -1%;
+}
+
+.welcome-section #separator {
+  margin-left: 2rem;
+}
+
+#clock {
+  z-index: 1;
+  position: absolute;
+  transform: translate(50rem, -6.5rem);
+  filter: grayscale(100%);
+}
+
+#banana {
+  z-index: 1;
+  position: absolute;
+  transform: translate(10rem, 15rem);
+  filter: grayscale(100%);
+}
+
+#second_separator {
+  margin-top: 3rem;
+}
+
+.welcome-section h2 {
+  font-size:xx-large;
+}
+
+.welcome-section h3 {
+  margin-top: 2rem;
+  color: #141414;
+}
+
+.line {
+  width: 60%;
+  border-top: 3px solid #181818;
+  margin-top: 2rem;
+}
+
 .info-section {
   margin-top: 3rem;
- /*  background-color: #141414; */
   display: flex;
   flex-direction: column;
   align-items: center;

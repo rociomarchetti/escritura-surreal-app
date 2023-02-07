@@ -2,7 +2,7 @@ import { AuthGuard } from './auth/guards/auth.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, CanLoad } from '@angular/router';
 
-import { HistoryComponent } from './pages/history/history.component';
+import { HistoryComponent } from './exquisite-corpses/pages/history/history.component';
 import { HomeComponent } from './pages/home/home.component';
 
 

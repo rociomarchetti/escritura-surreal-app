@@ -2,12 +2,18 @@ nav {
   background-color: black;
 }
 
-nav a {
+a,p,span {
   color: #fbfbfb;
+  /* letter-spacing: 0.1em; */
+}
+
+span {
+  margin-left: 10%;
 }
 
 .logged-in-nav {
   display: flex;
   flex-direction: row;
   margin-top: 1em;
+  margin-bottom: 0%;
 }

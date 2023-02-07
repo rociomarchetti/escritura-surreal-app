@@ -1,4 +1,50 @@
+form {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 40rem;
+  background-color: #141414;
+  color: #fbfbfbe0;
+  box-shadow: 7px 10px 5px 7px #464040,
+    12px 5px 21px 27px rgba(15, 15, 15, 0.86);
+  letter-spacing: 2px;
+}
 
 .hiddenSentence {
-    text-decoration: line-through;
+  text-decoration: line-through;
+  text-decoration-thickness: 9px;
+}
+
+p {
+  font-family: "SF Mono", sans-serif;
+}
+
+#clock {
+  z-index: -1;
+  position: absolute;
+  transform: translate(70rem, 18rem);
+  filter: grayscale(100%);
+}
+
+#banana {
+  z-index: -1;
+  position: absolute;
+  transform: translate(10%, 60%) rotate(150deg);
+  filter: grayscale(100%);
+}
+
+#cow {
+    z-index: -1;
+    position: absolute;
+    transform: translate(-95%, 50%) rotate(150deg);
+    filter: grayscale(100%); 
+}
+
+#window {
+    z-index: -1;
+    position: absolute;
+    transform: translate(20%, 180%) rotate(15deg);
+    filter: grayscale(100%);  
+
 }

@@ -8,8 +8,9 @@ import { TextsRoutingModule } from './texts-routing.module';
 import { ArchiveComponent } from './pages/archive/archive.component';
 import { CreateProjectComponent } from './pages/create-project/create-project.component';
 import { CurrentProjectComponent } from './pages/current-project/current-project.component';
-import { InspirationComponent } from './pages/inspiration/inspiration.component';
 import { TextComponent } from './pages/text/text.component';
+import { HistoryComponent } from './pages/history/history.component';
+
 
 import { TextsPipe } from './pipes/texts.pipe';
 import { WordsPipe } from './pipes/words.pipe';
@@ -20,10 +21,10 @@ import { WordsPipe } from './pipes/words.pipe';
     ArchiveComponent,
     CreateProjectComponent,
     CurrentProjectComponent,
-    InspirationComponent,
     WordsPipe,
     TextsPipe,
-    TextComponent
+    TextComponent,
+    HistoryComponent
   ],
   imports: [
     CommonModule,

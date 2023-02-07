@@ -14,9 +14,11 @@ export class ArchiveComponent implements OnInit {
   finalTextsList: FinalText[] = [];
   filteredTextsList: FinalText[] = [];
   filter: boolean = false;
+  filterStyle: number = 0;
 
   filterPresent() {
     this.filter = true;
+    this.filterStyle = 1;
     this.filteredTextsList = this.finalTextsList.filter(
       (a) => a.category === 'Presente'
     );
@@ -25,6 +27,7 @@ export class ArchiveComponent implements OnInit {
 
   filterPast() {
     this.filter = true;
+    this.filterStyle = 2;
     this.filteredTextsList = this.finalTextsList.filter(
       (a) => a.category === 'Pasado'
     );
@@ -33,6 +36,7 @@ export class ArchiveComponent implements OnInit {
 
   filterFuture() {
     this.filter = true;
+    this.filterStyle = 3;
     this.filteredTextsList = this.finalTextsList.filter(
       (a) => a.category === 'Futuro'
     );
@@ -40,6 +44,7 @@ export class ArchiveComponent implements OnInit {
   }
 
   deleteFilter() {
+    this.filterStyle = 0;
     return this.filter = false;
   }
 
@@ -48,7 +53,7 @@ export class ArchiveComponent implements OnInit {
   }
 
   deleteText(id:string) {
-    console.log(id)
+    this.TextsService.deleteText(id).subscribe((resp) => console.log(resp))
   }
 
   ngOnInit(): void {

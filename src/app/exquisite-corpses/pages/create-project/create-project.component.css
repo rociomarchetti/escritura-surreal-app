@@ -1,6 +1,24 @@
 form {
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.create-container {
+  position: fixed;  
+}
+
+video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#mask {
+    background: rgba(0, 0, 0, 0.658);
+    color: #f1f1f1;
+    font-size: x-large;
+    margin-left: 3rem;
+    padding: 20px;
 }

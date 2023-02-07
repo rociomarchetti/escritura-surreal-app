@@ -1,0 +1,9 @@
+
+form {
+    margin-top: 3rem;
+}
+
+img {
+    width: 40rem;
+    filter: grayscale(200%) brightness(110%);
+}

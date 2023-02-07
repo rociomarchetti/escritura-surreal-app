@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Result } from '../interfaces/videos.interface';
 
 import { FinalText } from './../interfaces/texts.interface';
 
@@ -8,7 +9,6 @@ import { FinalText } from './../interfaces/texts.interface';
   providedIn: 'root',
 })
 export class TextsService {
-
   date = require('moment');
   today = this.date().format('MMMM Do YYYY');
 
@@ -31,9 +31,36 @@ export class TextsService {
     );
   }
 
-  deleteText(id: string): Observable<any> {
-    return this.http.delete<any>(`http://localhost:3000/text/${id}`);
+  deleteText(id: string): Observable<FinalText> {
+    return this.http.delete<FinalText>(`http://localhost:3000/text/${id}`);
   }
+
+  /* API VIDEOS PEXELS.COM */
+
+  key: string = 'fJq9oul5bm8XpDbeKmOtIVXEJYORzFQ2tbsOtYn1OtPiMDKsxFb2BrdV';
+
+  collectionId: string = 'dh1vvdb';
+
+  getVideo(): Observable<any> {
+    return this.http.get<any>(
+      `https://api.pexels.com/v1/collections/${this.collectionId}`,
+      {
+        headers: {
+          Authorization: this.key,
+        },
+      }
+    );
+  }
+
+/*   getVideoById(id: string): Observable<any> {
+    return this.http.get<any>(`https://api.pexels.com/videos/videos/${id}`, 
+    {
+      headers: {
+        Authorization: this.key,
+      },
+    }
+    );
+  } */
 
   constructor(private http: HttpClient) {}
 }

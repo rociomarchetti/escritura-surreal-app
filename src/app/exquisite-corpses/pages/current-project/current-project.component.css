@@ -1,3 +1,35 @@
+.container-fluid {
+  background-color: #141414;
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 0%;
+  margin-bottom: 3rem;
+  padding: 20px;
+}
+
 .hiddenSentence {
-    text-decoration: line-through;
+  text-decoration: line-through;
+  text-decoration-thickness: 5px;
+}
+
+#words {
+  transition: position 0.6s ease-in;
+}
+
+p {
+  font-family: "SF Mono", sans-serif;
+}
+
+.card {
+ /*  border: solid 2px black; */
+  transition: box-shadow 0.6s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 7px 10px 5px 7px #faf7f7,
+    12px 5px 21px 27px rgba(247, 247, 247, 0.86);
+}
+
+button {
+  letter-spacing: 2px;
 }

@@ -25,18 +25,21 @@ export class LoginComponent {
   login() {
     this.AuthService.getUsers().subscribe((resp) => {
       let user = resp.find((a: User) => {
+        
         return (
           a.email === this.userForm.value.email &&
           a.password === this.userForm.value.password
         );
       });
       if (user) {
+        this.router.navigate(['']);
         this.saveActiveSession(user);
+        
         /* this.userForm.reset(); */
       } else {
         alert('User Not Found');
       }
-      this.router.navigate(['texts/archive']);
+      
     });
   }
 

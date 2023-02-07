@@ -40,7 +40,7 @@
           <div class="logged-in-nav col-12 col-md-3" *ngIf="loginControl">
             <p class="me-2">SESIÓN ADMINISTRACIÓN</p>
             <span
-              class="logout"
+              class="logout me-2"
               type="button"
               (click)="logout()"
               routerLink="home"
@@ -56,16 +56,16 @@
               <a class="nav-link" aria-current="page" routerLink="">inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="history">historia</a>
+              <a class="nav-link" routerLink="texts/create">comenzar texto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="texts/current">continuar texto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="texts/archive">archivo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="texts/create">comenzar texto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="texts/current">continuar texto</a>
+              <a class="nav-link" routerLink="history">inspirate</a>
             </li>
           </ul>
         </div>

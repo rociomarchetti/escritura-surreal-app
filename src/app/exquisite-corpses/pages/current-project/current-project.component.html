@@ -1,16 +1,18 @@
-<div class="container mt-3">
-  <div class="row mb-5 mt-3">
-    <div *ngFor="let item of unfinishedTexts" class="col-6">
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let item of unfinishedTexts" class="col-4">
       <div class="card p-3 m-3">
-        <p class="hiddenSentence">{{ item.sentences[item.sentences.length - 1].sentence }}</p>
-        <p>
-          <strong>{{
-            item.sentences | words
-          }}</strong> 
+        <p class="hiddenSentence">
+          {{ item.sentences[item.sentences.length - 1].sentence }}
         </p>
+        <h2 id="words">
+          <strong>{{ item.sentences | words }}</strong>
+        </h2>
         <p>Categoría: {{ item.category }}</p>
-        <p>A {{4 - item.sentences.length}} de terminar</p>
-        <button [routerLink]="['/texts/edit', item.id]">Continuar escribiendo</button>
+        <p>A {{ 4 - item.sentences.length }} de terminar</p>
+        <button [routerLink]="['/texts/edit', item.id]" class="btn btn-outline-dark hover-zoom mt-2">
+          Continuar escribiendo
+        </button>
       </div>
     </div>
   </div>

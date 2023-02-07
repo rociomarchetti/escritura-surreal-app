@@ -1,0 +1,28 @@
+.inspiration-section {
+  min-width: 100vw;
+  min-height: 90vh;
+  background-color: #141414;
+}
+
+.apiArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#fbfbfb;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h5 {
+  font-family: 'SF Mono', sans-serif;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+video {
+  margin-top: 2rem;
+  width: 35rem;
+}

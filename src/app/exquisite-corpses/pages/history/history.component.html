@@ -3,18 +3,21 @@
     <div class="col-3"></div>
 
     <div class="col-6 apiArea">
-
       <h3>Buscas inspiración?</h3>
-      <!-- <h5>Espacio + personaje + acción u conflicto</h5> -->
       <button (click)="getVideo()" class="btn btn-outline-light">SÍ</button>
 
       <div *ngIf="videoUrl != ''">
         <video autoplay loop>
-          <source src= {{videoUrl}} type="video/mp4" />
+          <source src="{{ videoUrl }}" type="video/mp4" />
         </video>
-     </div>
+      </div>
 
-      
+      <div *ngIf="searchingVideo === true && videoUrl === ''">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </div>
 
     <div class="col-3"></div>

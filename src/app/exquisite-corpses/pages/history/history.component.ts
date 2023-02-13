@@ -22,8 +22,11 @@ export class HistoryComponent {
   counter: number = 0;
   videoId: string = '';
 
+  searchingVideo: boolean = false;
+
   getVideo() {
     this.videoUrl = ''
+    this.searchingVideo = true;
     this.textsService
       .getVideo()
       .pipe(

@@ -21,7 +21,6 @@ p {
 }
 
 .card {
- /*  border: solid 2px black; */
   transition: box-shadow 0.6s ease-in-out;
 }
 

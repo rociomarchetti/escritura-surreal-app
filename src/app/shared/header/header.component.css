@@ -2,18 +2,29 @@ nav {
   background-color: black;
 }
 
-a,p,span {
-  color: #fbfbfb;
-  /* letter-spacing: 0.1em; */
-}
-
-span {
-  margin-left: 10%;
-}
-
-.logged-in-nav {
+.navbarSupportedContent {
   display: flex;
   flex-direction: row;
-  margin-top: 1em;
-  margin-bottom: 0%;
+  justify-content: space-between;
+}
+
+a,
+p,
+span {
+  color: #fbfbfb;
+}
+
+.sections-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.login-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  margin-top: 0.5rem;
 }

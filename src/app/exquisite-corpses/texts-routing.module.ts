@@ -5,16 +5,11 @@ import { CommonModule } from '@angular/common';
 import { TextComponent } from './pages/text/text.component';
 import { CurrentProjectComponent } from './pages/current-project/current-project.component';
 import { CreateProjectComponent } from './pages/create-project/create-project.component';
-import { ArchiveComponent } from './pages/archive/archive.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      {
-        path:'archive',
-        component: ArchiveComponent
-      },
       {
         path: 'create',
         component: CreateProjectComponent

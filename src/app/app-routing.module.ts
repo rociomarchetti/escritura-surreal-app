@@ -1,3 +1,4 @@
+import { CurrentProjectComponent } from './exquisite-corpses/pages/current-project/current-project.component';
 import { ArchiveComponent } from './exquisite-corpses/pages/archive/archive.component';
 import { AuthGuard } from './auth/guards/auth.guard';
 import { NgModule } from '@angular/core';
@@ -21,6 +22,10 @@ const routes: Routes = [
     component: ArchiveComponent
   },
   {
+    path: 'current',
+    component: CurrentProjectComponent
+  },
+  {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule)
   },
@@ -29,11 +34,11 @@ const routes: Routes = [
     loadChildren: () => import('./exquisite-corpses/texts.module').then(m => m.TextsModule),
     canLoad: [ AuthGuard],
     canActivate: [ AuthGuard ]
-  }
-  /* {
+  },
+  {
     path: '**',
     redirectTo: ''
-  } */
+  }
 ];
 
 @NgModule({

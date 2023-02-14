@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TextComponent } from './pages/text/text.component';
-import { CurrentProjectComponent } from './pages/current-project/current-project.component';
+
 import { CreateProjectComponent } from './pages/create-project/create-project.component';
 
 const routes: Routes = [
@@ -13,10 +13,6 @@ const routes: Routes = [
       {
         path: 'create',
         component: CreateProjectComponent
-      },
-      {
-        path: 'current',
-        component: CurrentProjectComponent
       },
       {
         path: 'edit/:id',

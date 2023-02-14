@@ -11,9 +11,11 @@ import { AuthService } from './../../services/auth.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  submitMSG: string = '';
+
   userForm: FormGroup = this.fb.group({
-    email: ['', [Validators.required]],
-    password: ['', [Validators.required]],
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, Validators.minLength(4)]],
   });
 
   saveActiveSession(user: User) {
@@ -25,7 +27,6 @@ export class LoginComponent {
   login() {
     this.AuthService.getUsers().subscribe((resp) => {
       let user = resp.find((a: User) => {
-        
         return (
           a.email === this.userForm.value.email &&
           a.password === this.userForm.value.password
@@ -34,13 +35,17 @@ export class LoginComponent {
       if (user) {
         this.router.navigate(['']);
         this.saveActiveSession(user);
-        
-        /* this.userForm.reset(); */
+        this.userForm.reset();
       } else {
-        alert('User Not Found');
+        this.submitMSG = 'Los datos ingresados no parecen ser correctos.';
       }
-      
     });
+  }
+
+  invalid(field: string) {
+    return (
+      this.userForm.get(field)?.invalid || this.userForm.get(field)?.untouched
+    );
   }
 
   constructor(

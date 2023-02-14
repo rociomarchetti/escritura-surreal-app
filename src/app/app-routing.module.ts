@@ -1,3 +1,4 @@
+import { ArchiveComponent } from './exquisite-corpses/pages/archive/archive.component';
 import { AuthGuard } from './auth/guards/auth.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, CanLoad } from '@angular/router';
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'history',
     component: HistoryComponent
+  },
+  {
+    path: 'archive',
+    component: ArchiveComponent
   },
   {
     path: 'auth',

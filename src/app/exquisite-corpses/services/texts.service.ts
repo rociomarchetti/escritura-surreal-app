@@ -52,15 +52,5 @@ export class TextsService {
     );
   }
 
-/*   getVideoById(id: string): Observable<any> {
-    return this.http.get<any>(`https://api.pexels.com/videos/videos/${id}`, 
-    {
-      headers: {
-        Authorization: this.key,
-      },
-    }
-    );
-  } */
-
   constructor(private http: HttpClient) {}
 }

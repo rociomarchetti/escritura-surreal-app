@@ -1,29 +1,41 @@
-
 <div class="container-fluid">
-    <div class="row">
-        <!-- <div class="col-1"></div> -->
-        <div class="col-6 ms-2">
-            <form [formGroup]="userForm" (ngSubmit)="login()" autocomplete="off">
-                <div class="mb-3">
-                  <label for="inputEmail" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="inputEmail" formControlName="email">
-                </div>
-                <div class="mb-3">
-                  <label for="inputPassword" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="inputPassword" formControlName="password">
-                  <!-- <app-verify-password></app-verify-password> -->
-                </div>
-                <button type="submit" class="btn btn-outline-light">Enviar</button>
-              </form>
-             <!--  <div id="floating-image">
-                <img src="../../assets/puerta.jpg" style="width: 10rem" id="clock"/>
-              </div> -->
+  <div class="row">
+    <div class="col-6 ms-2">
+      <form [formGroup]="userForm" (ngSubmit)="login()" autocomplete="off">
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            formControlName="email"
+          />
+          <span class="form-error text-danger" *ngIf="invalid('email')">
+            Ingresa un correo válido
+          </span>
         </div>
-        <div class="col-4">
-          <video poster="../../../assets/puerta_captura.png" autoplay loop>
-            <source src="../../../assets/puerta.mp4" type="video/mp4" />
-          </video>
+        <div class="mb-3">
+          <label for="inputPassword" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            formControlName="password"
+          />
+          <span class="form-error text-danger" *ngIf="invalid('password')">
+            La contraseña debe tener al menos 4 caracteres
+          </span>
         </div>
+        <div>
+          <button type="submit" class="btn btn-outline-light">Enviar</button><br>
+          <p id="submitMSG">{{ submitMSG }}</p>
+        </div>
+      </form>
     </div>
+    <div class="col-4">
+      <video poster="../../../assets/puerta_captura.png" autoplay loop>
+        <source src="../../../assets/puerta.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
 </div>
-

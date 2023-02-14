@@ -11,7 +11,7 @@ import { User } from './../interfaces/auth.interface';
 })
 export class AuthService {
   loginControl: boolean = false;
-  loggedUser: User | undefined; /* lo uso para el register */
+  loggedUser: User | undefined;
   loggedUserName: string = '';
   loggedUserId: string = '';
   adminSession: boolean = false;

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
 
@@ -19,8 +20,8 @@ export class RegisterComponent {
 
   newUserForm: FormGroup = this.fb.group({
     newUserName: ['', [Validators.required]],
-    newUserEmail: ['', [Validators.required]],
-    newUserPassword: ['', [Validators.required]],
+    newUserEmail: ['', [Validators.required, Validators.email]],
+    newUserPassword: ['', [Validators.required, Validators.minLength(4)]],
   });
 
   createNewUser() {
@@ -29,10 +30,27 @@ export class RegisterComponent {
     this.newUser.password = this.newUserForm.value.newUserPassword;
 
     this.AuthService.registerUser(this.newUser).subscribe((newUser) => {
-      this.AuthService.loggedUser = newUser;
-      this.AuthService.loginControl = true;
+      this.router.navigate(['']);
+      this.saveActiveSession(newUser);
     });
   }
 
-  constructor(private fb: FormBuilder, private AuthService: AuthService) {}
+  saveActiveSession(user: User) {
+    this.AuthService.saveSession(user.id).subscribe((resp) =>
+      console.log(resp)
+    );
+  }
+
+  invalid(field: string) {
+    return (
+      this.newUserForm.get(field)?.invalid ||
+      this.newUserForm.get(field)?.untouched
+    );
+  }
+
+  constructor(
+    private fb: FormBuilder,
+    private AuthService: AuthService,
+    private router: Router
+  ) {}
 }

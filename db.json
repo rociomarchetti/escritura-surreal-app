@@ -29,29 +29,35 @@
       "name": "Jose",
       "email": "jose@mail.com",
       "password": "qwerty"
+    },
+    {
+      "id": "drT-imw",
+      "name": "Pepa",
+      "email": "pepa@mail.com",
+      "password": "unas"
     }
   ],
   "text": [
     {
       "id": "XZw7Ce4",
-      "category": "Pasado",
+      "category": "Futuro",
       "date": "December 11th 2022",
       "sentences": [
         {
           "userId": "0EHRs0a",
-          "sentence": "una casa estaba llena de piedras y hojas"
+          "sentence": "Una casa estará llena de piedras y hojas"
         },
         {
           "userId": "0EHRs0a",
-          "sentence": "amarillas por el otoño y arremolinadas en un rincón"
+          "sentence": "amarillas por el otoño y arremolinadas en un rincón,"
         },
         {
           "userId": "0EHRs0a",
-          "sentence": "un rincón donde hacía tiempo jugaban los niños,"
+          "sentence": "un rincón donde dentro de un tiempo jugabarán los niños,"
         },
         {
           "userId": "0EHRs0a",
-          "sentence": "esos niños del maizal que salían por las noches a buscar nuevas víctimas"
+          "sentence": "esos niños del maizal que antes salían por las noches a buscar nuevas víctimas, pero que próximamente solo buscarán chocolate."
         }
       ]
     },
@@ -62,19 +68,19 @@
       "sentences": [
         {
           "userId": "0EHRs0a",
-          "sentence": "un señor camina muy rápido debajo de la lluvia"
+          "sentence": "Un señor camina muy rápido debajo de la lluvia,"
         },
         {
           "userId": "0EHRs0a",
-          "sentence": "una lluvia ácida pero de ácido cítrico porque llueven mandarinas"
+          "sentence": "una lluvia ácida pero de ácido cítrico porque llueven mandarinas."
         },
         {
           "userId": "0EHRs0a",
-          "sentence": "las mandarinas que ya no me gustan tanto como antes, prefiero una butifarra"
+          "sentence": "Las mandarinas que ya no me gustan tanto como antes, prefiero una butifarra:"
         },
         {
           "userId": "0EHRs0a",
-          "sentence": "butifarra de huevo, de lo mejor que ha dado esta tierra"
+          "sentence": "butifarra de huevo, de lo mejor que ha dado esta tierra."
         }
       ]
     },
@@ -85,7 +91,7 @@
       "sentences": [
         {
           "userId": "0EHRs0a",
-          "sentence": "será amarilla, o quizás verde la bici"
+          "sentence": "Será amarilla, o quizás verde la bici"
         }
       ]
     },
@@ -96,7 +102,7 @@
       "sentences": [
         {
           "userId": "0EHRs0a",
-          "sentence": "ahora mismo no sabría qué decirte"
+          "sentence": "Ahora mismo no sabría qué decirte"
         }
       ]
     },
@@ -107,7 +113,7 @@
       "sentences": [
         {
           "userId": "0EHRs0a",
-          "sentence": "puede ser que en algún momento sí que se viera el otro lado"
+          "sentence": "Puede ser que en algún momento sí que se viera el otro lado"
         }
       ]
     },
@@ -118,7 +124,19 @@
       "sentences": [
         {
           "userId": "0EHRs0a",
-          "sentence": "cuando despertó el dinosaurio aún seguía allí"
+          "sentence": "Cuando despertó el dinosaurio aún seguía allí"
+        },
+        {
+          "userId": "drT-imw",
+          "sentence": "aunque nadie prestaba atención, al menos desde que había sucedido aquello de los volcanes"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "que largaban pelotas de colores. No recuerdo bien si venían en todos los colores, solo recuerdo algunas que eran azules y otras pelotas naranjas"
+        },
+        {
+          "userId": "lrupFcc",
+          "sentence": "que nada tenían que ver con naranjas en modo fruta, ni tampoco mandarinas, a excepción de su forma, color y sabor. "
         }
       ]
     },
@@ -130,6 +148,14 @@
         {
           "userId": "lrupFcc",
           "sentence": "Una mañana me desperté sintiendo todo amarillo, pero no de color, sino de temperatura"
+        },
+        {
+          "userId": "drT-imw",
+          "sentence": "No se sabía bien qué pasaba, pero algo no estaba funcionando muy bien a nivel climático"
+        },
+        {
+          "userId": "lrupFcc",
+          "sentence": "probablemente por lo de esos vagones que acaban de explotar allá lejos llenando toda la atmósfera de confetis"
         }
       ]
     },
@@ -143,8 +169,8 @@
           "sentence": "Una naranja se paseaba en un olivar dispuesta a encarar una nueva vida"
         },
         {
-          "userId": "0EHRs0a",
-          "sentence": "Una naranja se paseaba en un olivar dispuesta a encarar una nueva vida"
+          "userId": "drT-imw",
+          "sentence": "y nueva silueta. Esto último no era ya tanto una sorpresa, sino más bien qué sería aquello de una vida nueva para alguien como ella"
         }
       ]
     },
@@ -156,6 +182,10 @@
         {
           "userId": "0EHRs0a",
           "sentence": "La cocina de repente no funciona a gas sino a fuerza de aplausos cerrados"
+        },
+        {
+          "userId": "drT-imw",
+          "sentence": "lo que se dice una ovación, pero, en este caso, no en exteriores sino en pleno mar"
         }
       ]
     },
@@ -167,6 +197,36 @@
         {
           "userId": "lrupFcc",
           "sentence": "Esto es un prueba para ver qué es lo que pasará mañana o ayer"
+        },
+        {
+          "userId": "drT-imw",
+          "sentence": "cuando finalmente crezcan los pastos y empiecen a volar las pelusas de los plátanos"
+        }
+      ]
+    },
+    {
+      "id": "lvvzcGv",
+      "category": "Presente",
+      "date": "February 15th 2023",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "Un sol de papel y madera por ello mismo altamente inflamable"
+        },
+        {
+          "userId": "drT-imw",
+          "sentence": "que no es lo mismo que altamente inflable, hay que aclarar, porque la gente tiende a confundirse."
+        }
+      ]
+    },
+    {
+      "id": "wpYaIgh",
+      "category": "Pasado",
+      "date": "February 15th 2023",
+      "sentences": [
+        {
+          "userId": "drT-imw",
+          "sentence": "Qué habrá sido de aquel elefante que solía balancearse sobre la tela de una araña"
         }
       ]
     }

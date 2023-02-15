@@ -47,7 +47,10 @@ export class AuthService {
     let id = localStorage.getItem('token');
     return this.http.get<User>(`http://localhost:3000/user/${id}`).pipe(
       map((auth) => {
-        if (auth.id === 'cVsW9eQ') {
+  /*       if (auth.id === 'cVsW9eQ') {
+          this.adminSession = true;
+        } */
+        if(localStorage.getItem('admin')) {
           this.adminSession = true;
         }
         this.loggedUserName = auth.name;
@@ -59,13 +62,16 @@ export class AuthService {
   saveSession(id: string): Observable<User> {
     if (id === 'cVsW9eQ') {
       this.adminSession = true;
+      localStorage.setItem('admin', 'true')
+
     }
     this.loginControl = true;
     return this.http.get<User>(`http://localhost:3000/user/${id}`).pipe(
       tap((user) => localStorage.setItem('token', user.id)),
       tap((user) => localStorage.setItem('name', user.name)),
       tap((resp) => localStorage.setItem('control', 'true')),
-      tap((user) => (this.loggedUserName = user.name))
+      tap((user) => (this.loggedUserName = user.name)),
+      tap((user) => this.loggedUserId = user.id)
     );
   }
 
@@ -73,6 +79,7 @@ export class AuthService {
     localStorage.removeItem('token');
     localStorage.removeItem('name');
     localStorage.removeItem('control');
+    localStorage.removeItem('admin');
     this.loginControl = false;
     this.adminSession = false;
     this.router.navigate(['']);

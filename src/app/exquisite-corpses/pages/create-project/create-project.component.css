@@ -22,3 +22,8 @@ video {
     margin-left: 3rem;
     padding: 20px;
 }
+
+span {
+  font-size: smaller;
+  font-family: 'SF Mono', sans-serif;
+}

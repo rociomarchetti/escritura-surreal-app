@@ -20,6 +20,11 @@ p {
   font-family: "SF Mono", sans-serif;
 }
 
+.submit {
+  display: flex;
+  flex-direction: column;
+}
+
 #clock {
   z-index: -1;
   position: absolute;

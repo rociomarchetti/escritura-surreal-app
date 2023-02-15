@@ -44,7 +44,7 @@ export class LoginComponent {
 
   invalid(field: string) {
     return (
-      this.userForm.get(field)?.invalid || this.userForm.get(field)?.untouched
+      this.userForm.get(field)?.invalid && this.userForm.get(field)?.touched
     );
   }
 

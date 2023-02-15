@@ -43,8 +43,8 @@ export class RegisterComponent {
 
   invalid(field: string) {
     return (
-      this.newUserForm.get(field)?.invalid ||
-      this.newUserForm.get(field)?.untouched
+      this.newUserForm.get(field)?.invalid &&
+      this.newUserForm.get(field)?.touched
     );
   }
 

@@ -27,7 +27,7 @@ export class TextComponent {
   };
 
   sentenceForm: FormGroup = this.fb.group({
-    userSentence: ['', [Validators.required]],
+    userSentence: ['', [Validators.required, Validators.minLength(15)]],
   });
 
   lastSentence: string = '';
@@ -59,6 +59,12 @@ export class TextComponent {
             this.currentText.sentences.length - 1
           ].sentence;
       });
+  }
+
+  invalid(field: string) {
+    return (
+      this.sentenceForm.get(field)?.invalid && this.sentenceForm.get(field)?.touched
+    );
   }
 
   constructor(

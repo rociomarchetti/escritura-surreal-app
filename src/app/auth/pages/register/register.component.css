@@ -1,6 +1,10 @@
 
+.container {
+    height: 80vh;
+}
+
 form {
-    margin-top: 3rem;
+    padding: 3rem
 }
 
 img {

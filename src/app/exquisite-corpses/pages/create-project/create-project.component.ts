@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
 
@@ -13,7 +14,7 @@ import { TextsService } from './../../services/texts.service';
 })
 export class CreateProjectComponent {
   newTextForm: FormGroup = this.fb.group({
-    newTextSentence: ['', [Validators.required]],
+    newTextSentence: ['', [Validators.required, Validators.minLength(15)]],
     newTextCategory: ['', [Validators.required]],
   });
 
@@ -40,7 +41,14 @@ export class CreateProjectComponent {
     this.TextsService.saveText(this.text).subscribe((resp) =>
       console.log(resp)
     );
+    this.router.navigate(['current']);
   }
 
-  constructor(private fb: FormBuilder, private TextsService: TextsService, private AuthService: AuthService) {}
+  invalid(field: string) {
+    return (
+      this.newTextForm.get(field)?.invalid && this.newTextForm.get(field)?.touched
+    );
+  }
+
+  constructor(private fb: FormBuilder, private TextsService: TextsService, private AuthService: AuthService, private router: Router) {}
 }

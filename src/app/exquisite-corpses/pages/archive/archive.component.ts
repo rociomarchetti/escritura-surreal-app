@@ -4,7 +4,6 @@ import { FinalText, Sentence } from './../../interfaces/texts.interface';
 import { AuthService } from './../../../auth/services/auth.service';
 import { TextsService } from './../../services/texts.service';
 
-
 @Component({
   selector: 'app-archive',
   templateUrl: './archive.component.html',
@@ -31,7 +30,7 @@ export class ArchiveComponent implements OnInit {
     this.filteredTextsList = this.finalTextsList.filter(
       (a) => a.category === 'Pasado'
     );
-    return this.filteredTextsList
+    return this.filteredTextsList;
   }
 
   filterFuture() {
@@ -40,20 +39,20 @@ export class ArchiveComponent implements OnInit {
     this.filteredTextsList = this.finalTextsList.filter(
       (a) => a.category === 'Futuro'
     );
-    return this.filteredTextsList
+    return this.filteredTextsList;
   }
 
   deleteFilter() {
     this.filterStyle = 0;
-    return this.filter = false;
+    return (this.filter = false);
   }
 
   get adminSession() {
-    return this.AuthService.adminSession
+    return this.AuthService.adminSession;
   }
 
-  deleteText(id:string) {
-    this.TextsService.deleteText(id).subscribe((resp) => console.log(resp))
+  deleteText(id: string) {
+    this.TextsService.deleteText(id).subscribe((resp) => console.log(resp));
   }
 
   ngOnInit(): void {
@@ -67,5 +66,8 @@ export class ArchiveComponent implements OnInit {
     );
   }
 
-  constructor(private TextsService: TextsService, private AuthService: AuthService) {}
+  constructor(
+    private TextsService: TextsService,
+    private AuthService: AuthService
+  ) {}
 }

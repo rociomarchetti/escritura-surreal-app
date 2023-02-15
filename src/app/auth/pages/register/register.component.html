@@ -1,20 +1,25 @@
 <div class="container">
-
   <div class="row">
-
     <div class="col-4 ms-2">
-      <form [formGroup]="newUserForm" (ngSubmit)="createNewUser()" #myForm="ngForm">
+      <form
+        [formGroup]="newUserForm"
+        (ngSubmit)="createNewUser()"
+        #myForm="ngForm"
+      >
         <div class="mb-3">
           <label for="inputName" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="inputName" formControlName="newUserName"/>
+          <input
+            type="text"
+            class="form-control"
+            id="inputName"
+            formControlName="newUserName"
+          />
           <span class="form-error text-danger" *ngIf="invalid('newUserName')">
             Ingresa un nombre válido
           </span>
         </div>
         <div class="mb-3">
-          <label for="inputEmail" class="form-label"
-            >Correo electrónico</label
-          >
+          <label for="inputEmail" class="form-label">Correo electrónico</label>
           <input
             type="email"
             class="form-control"
@@ -37,16 +42,24 @@
             id="inputPassword"
             formControlName="newUserPassword"
           />
-          <span class="form-error text-danger" *ngIf="invalid('newUserPassword')">
+          <span
+            class="form-error text-danger"
+            *ngIf="invalid('newUserPassword')"
+          >
             La contraseña debe tener un mínimo de 4 caracteres
           </span>
         </div>
-        <button type="submit" class="btn btn-outline-dark" [disabled]="!myForm.form.valid">Guardar</button>
+        <button
+          type="submit"
+          class="btn btn-outline-dark"
+          [disabled]="!myForm.form.valid"
+        >
+          Guardar
+        </button>
       </form>
     </div>
     <div class="col-6">
-      <img src="../../assets/perritos.jpg"/>
+      <img src="../../assets/perritos.jpg" />
     </div>
-
   </div>
 </div>

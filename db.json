@@ -1,34 +1,34 @@
 {
-  "users": [
+  "user": [
     {
-      "email": "rociom@mail.com",
-      "password": "$2a$10$hC3oCMxarn65zGumYrZQluji7cvspOXS3tPpb0z1C8E/4rWJIbLEq",
+      "id": "0EHRs0a",
       "name": "Rocio",
-      "id": 1
+      "email": "rocio@mail.com",
+      "password": "1234"
     },
     {
-      "email": "marta@mail.com",
-      "password": "$2a$10$Au4AsGF9I1QOCQu8Za4nEOYWxMAtRYG6y9VjTXKI0VX/2FcMxi.Kq",
+      "id": "lrupFcc",
       "name": "Marta",
-      "id": 2
+      "email": "marta@mail.com",
+      "password": "5678"
     },
     {
-      "email": "admin@mail.com",
-      "password": "$2a$10$kxDbreOikSv.JEqY9o8eOuSXjBpezgczr1N36LPtA8X5/ElJBouOi",
+      "id": "cVsW9eQ",
       "name": "Admin",
-      "id": 3
+      "email": "admin@mail.com",
+      "password": "9876"
     },
     {
-      "email": "lalo@mail.com",
-      "password": "$2a$10$YxY08OPnTx8zM9oBISTTrO8MSZAFDMtEqDNdGscNC0fXEKj5jjkS.",
+      "id": "8xKddPR",
       "name": "Lalo",
-      "id": 4
+      "email": "lalo@mail.com",
+      "password": "este"
     },
     {
-      "email": "carlo@mail.com",
-      "password": "$2a$10$KzOlT0c5TGEnw1atGn2STuoWH9KyUbxyJfCbm2COQkRyh9krtr0rS",
-      "id": 5,
-      "name": "Carlo"
+      "id": "6HtlY2O",
+      "name": "Jose",
+      "email": "jose@mail.com",
+      "password": "qwerty"
     }
   ],
   "text": [
@@ -79,29 +79,6 @@
       ]
     },
     {
-      "id": "_vUZ67d",
-      "category": "Futuro",
-      "date": "December 11th 2022",
-      "sentences": [
-        {
-          "userId": "0EHRs0a",
-          "sentence": "habrá alguna vez un pato que reniegue de ser blanco porque le resulte muy sucio,"
-        },
-        {
-          "userId": "0EHRs0a",
-          "sentence": "sucio como el parabrisas del coche cuando no lo lavan bien luego de la lluvia."
-        },
-        {
-          "userId": "0EHRs0a",
-          "sentence": "Lluvia y montañas nevadas solían ser un espectáculo imperdible, sobre todo durante el invierno, pero ahora ya no"
-        },
-        {
-          "userId": "0EHRs0a",
-          "sentence": "será cuando más me agrade salir a pasear."
-        }
-      ]
-    },
-    {
       "id": "poFGT-B",
       "category": "Futuro",
       "date": "December 11th 2022",
@@ -109,10 +86,6 @@
         {
           "userId": "0EHRs0a",
           "sentence": "será amarilla, o quizás verde la bici"
-        },
-        {
-          "userId": "lrupFcc",
-          "sentence": "que nos llevará hasta la verdulería pasado mañana"
         }
       ]
     },
@@ -124,18 +97,6 @@
         {
           "userId": "0EHRs0a",
           "sentence": "ahora mismo no sabría qué decirte"
-        },
-        {
-          "userId": "0EHRs0a",
-          "sentence": "respecto a esa cosa que nos sobrevuela cada vez más cerca"
-        },
-        {
-          "userId": "lrupFcc",
-          "sentence": "pero también cada vez más lejos como el horizonte"
-        },
-        {
-          "userId": "8xKddPR",
-          "sentence": "que cuando hace mucho calor se vuelve una línea difusa"
         }
       ]
     },
@@ -147,10 +108,6 @@
         {
           "userId": "0EHRs0a",
           "sentence": "puede ser que en algún momento sí que se viera el otro lado"
-        },
-        {
-          "userId": "8xKddPR",
-          "sentence": "¿pero cuál? no sé si el lado de más allá o el de más acá"
         }
       ]
     },
@@ -162,10 +119,54 @@
         {
           "userId": "0EHRs0a",
           "sentence": "cuando despertó el dinosaurio aún seguía allí"
+        }
+      ]
+    },
+    {
+      "id": "pODK9ap",
+      "category": "Pasado",
+      "date": "January 24th 2023",
+      "sentences": [
+        {
+          "userId": "lrupFcc",
+          "sentence": "Una mañana me desperté sintiendo todo amarillo, pero no de color, sino de temperatura"
+        }
+      ]
+    },
+    {
+      "id": "8khySXi",
+      "category": "Pasado",
+      "date": "January 25th 2023",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "Una naranja se paseaba en un olivar dispuesta a encarar una nueva vida"
         },
         {
-          "userId": "8xKddPR",
-          "sentence": "aunque se lo solía ver muy poco por aquí últimamente"
+          "userId": "0EHRs0a",
+          "sentence": "Una naranja se paseaba en un olivar dispuesta a encarar una nueva vida"
+        }
+      ]
+    },
+    {
+      "id": "aCq-vdh",
+      "category": "Presente",
+      "date": "January 25th 2023",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "La cocina de repente no funciona a gas sino a fuerza de aplausos cerrados"
+        }
+      ]
+    },
+    {
+      "id": "DpRfIpb",
+      "category": "Futuro",
+      "date": "January 25th 2023",
+      "sentences": [
+        {
+          "userId": "lrupFcc",
+          "sentence": "Esto es un prueba para ver qué es lo que pasará mañana o ayer"
         }
       ]
     }

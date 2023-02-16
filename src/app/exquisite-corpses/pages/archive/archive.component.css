@@ -3,8 +3,8 @@
   margin-bottom: 3rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-image: url("src\assets\white-brush2.png");
   background-size: 85rem 15rem;
   background-position-y: center;
@@ -52,10 +52,15 @@ img:hover {
   filter: grayscale(100%) contrast(175%);
 }
 
-.text {
-  border: 5px solid rgb(160, 154, 154);
-  font-size: large;
-  padding: 1em;
-  color: aliceblue;
-  background-color: black;
+@media (max-width: 768px) {
+
+  h5 {
+    display: none;
+  }
+
+  .filter-section {
+    width: 100vw;
+    padding: 3rem;
+  }
+
 }

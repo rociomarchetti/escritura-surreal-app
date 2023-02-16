@@ -25,17 +25,19 @@
   </div>
 
   <ng-template [ngIf]="filter">
-    <div *ngFor="let text of filteredTextsList" class="col-3 ms-5">
-      <div class="card p-3 mt-2">
-        <p class="card-text">{{ text.sentences | texts }}</p>
+    <div class="row ms-5">
+      <div *ngFor="let text of filteredTextsList" class="col-3">
+        <div class="card p-3 m-2">
+          <p class="card-text">{{ text.sentences | texts }}</p>
+        </div>
       </div>
     </div>
   </ng-template>
 
   <ng-template [ngIf]="!filter">
-    <div class="row mb-5 mt-2">
-      <div *ngFor="let text of finalTextsList" class="col-3 ms-5">
-        <div class="card p-3 mt-2">
+    <div class="row ms-5">
+      <div *ngFor="let text of finalTextsList" class="col-3">
+        <div class="card p-3 m-2">
           <p class="card-text">{{ text.sentences | texts }}</p>
           <ng-template [ngIf]="adminSession">
             <button class="btn btn-danger" (click)="deleteText(text.id)">

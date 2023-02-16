@@ -2,14 +2,6 @@ nav {
   background-color: black;
 }
 
-#navbarSupportedContent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
 a,
 p,
 span {
@@ -26,6 +18,7 @@ a:hover {
 }
 
 .sections-nav {
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -33,6 +26,7 @@ a:hover {
 }
 
 .login-nav {
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -41,14 +35,14 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-
   .sections-nav {
     flex-direction: column;
     text-align: left;
   }
 
   .login-nav {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0.5rem;
   }
 }

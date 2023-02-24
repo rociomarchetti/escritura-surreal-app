@@ -6,12 +6,8 @@
 
 .hero-section {
   background-color: #141414;
-  border-radius: 0%;
-  padding: 5%;
-  height: 90vh;
   width: 100%;
   margin-top: -1px;
-  margin-bottom: 0%;
 }
 
 .square {
@@ -111,14 +107,14 @@ h4 {
 #first-img {
   z-index: 1;
   position: absolute;
-  transform: translate(-35rem, 3rem);
+  transform: translate(-41rem, 3rem);
   filter: grayscale(100%);
 }
 
 #second-img {
   z-index: -1;
   position: absolute;
-  transform: translate(18rem, 57rem);
+  transform: translate(25rem, 57rem);
   filter: grayscale(100%);
 }
 
@@ -181,12 +177,12 @@ a:link, a:visited, a:active {
     padding: 2rem;
   }
 
-  #banana {
+/*   #banana {
     transform: translate(15rem, 31rem);
   }
 
   #second-img {
     display: none
-  }
+  } */
 
 }

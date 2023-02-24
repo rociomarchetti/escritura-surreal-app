@@ -1,19 +1,15 @@
 .container-fluid {
     background-color: #141414;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     margin-left: 0%;
     margin-right: 0%;
 }
 
 form {
-    padding: 3rem;
-    margin-left: 3.5rem;
-    width: 30rem;
     color: #fbfbfb;
 }
 
 video {
-    margin-top: 15rem;
     width: 25rem;
 }

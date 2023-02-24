@@ -1,6 +1,7 @@
 
 .container {
-    height: 80vh;
+    height: 100vh;
+    width: 100%;
 }
 
 form {
@@ -8,6 +9,6 @@ form {
 }
 
 img {
-    width: 40rem;
     filter: grayscale(200%) brightness(110%);
+    margin-left: -15px;
 }

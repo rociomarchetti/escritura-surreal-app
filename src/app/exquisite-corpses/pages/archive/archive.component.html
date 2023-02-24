@@ -4,40 +4,40 @@
   [class.past]="filterStyle === 2"
   [class.future]="filterStyle === 3"
 >
-  <div class="row">
-    <div class="filter-section">
-      <h5>Filtrar por relatos del:</h5>
-      <a (click)="filterPresent()">
-        <img src="../../assets/sol.png" id="sun" /><br />Presente</a
-      >
-      <a (click)="filterPast()"
-        ><img src="../../assets/nube.png" id="cloud" /><br />Pasado</a
-      >
-      <a (click)="filterFuture()"
-        ><img src="../../assets/luna.png" id="moon" /><br />Futuro</a
-      >
+  <div
+    class="filter-section d-flex flex-row justify-content-center p-5 ms-5 mb-5"
+  >
+    <h5 class="d-none d-md-block">Filtrar por relatos del:</h5>
+    <a (click)="filterPresent()">
+      <img src="../../assets/sol.png" id="sun" /><br />Presente</a
+    >
+    <a (click)="filterPast()"
+      ><img src="../../assets/nube.png" id="cloud" /><br />Pasado</a
+    >
+    <a (click)="filterFuture()"
+      ><img src="../../assets/luna.png" id="moon" /><br />Futuro</a
+    >
 
-      <a (click)="deleteFilter()" id="quit-btn"
-        ><img src="../../assets/anular.png" /><br />
-        Siempre</a
-      >
-    </div>
+    <a (click)="deleteFilter()" id="quit-btn" class="d-none d-md-block"
+      ><img src="../../assets/anular.png" /><br />
+      Siempre</a
+    >
   </div>
 
-  <ng-template [ngIf]="filter">
-    <div class="row ms-5">
-      <div *ngFor="let text of filteredTextsList" class="col-3">
-        <div class="card p-3 m-2">
+  <ng-template [ngIf]="filter" class="container-fluid">
+    <div class="d-flex flex-column flex-md-row justify-content-center">
+      <div *ngFor="let text of filteredTextsList" class="col-sm-12 col-md-3">
+        <div class="card p-3 m-3">
           <p class="card-text">{{ text.sentences | texts }}</p>
         </div>
       </div>
     </div>
   </ng-template>
 
-  <ng-template [ngIf]="!filter">
-    <div class="row ms-5">
-      <div *ngFor="let text of finalTextsList" class="col-3">
-        <div class="card p-3 m-2">
+  <ng-template [ngIf]="!filter" class="container-fluid">
+    <div class="d-flex flex-column flex-md-row justify-content-center">
+      <div *ngFor="let text of finalTextsList" class="col-sm-12 col-md-3">
+        <div class="card p-3 m-3">
           <p class="card-text">{{ text.sentences | texts }}</p>
           <ng-template [ngIf]="adminSession">
             <button class="btn btn-danger" (click)="deleteText(text.id)">

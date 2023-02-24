@@ -1,11 +1,11 @@
-<div class="container-fluid">
+<div class="container-fluid section">
   <div class="row">
-    <div class="col-2">
+    <div class="col-0 col-md-4">
       <img src="../../assets/reloj.png" style="width: 10rem" id="clock" />
       <img src="../../assets/banana.png" style="width: 10rem" id="banana" />
       <img src="../../assets/ventana.png" style="width: 10rem" id="window" />
     </div>
-    <div class="col-8 text-center">
+    <div class="col-12 col-md-4 text-center">
       <form [formGroup]="sentenceForm" (ngSubmit)="saveSentence()" #myForm="ngForm">
         <div class="mb-3 p-5">
           <div class="p-3">
@@ -42,7 +42,7 @@
         </div>
       </form>
     </div>
-    <div class="col-2">
+    <div class="col-0 col-md-4">
       <img src="../../assets/vaca.png" style="width: 10rem" id="cow" />
     </div>
   </div>

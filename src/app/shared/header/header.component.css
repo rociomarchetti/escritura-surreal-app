@@ -17,32 +17,7 @@ a:hover {
   text-shadow: 5px 5px 15px #fff;
 }
 
-.sections-nav {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: center;
-}
-
-.login-nav {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: center;
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .sections-nav {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .login-nav {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 0.5rem;
-  }
+img {
+  filter: invert(100%);
+  width: 40px
 }

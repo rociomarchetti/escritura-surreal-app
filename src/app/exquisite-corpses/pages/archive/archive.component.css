@@ -1,10 +1,4 @@
 .filter-section {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   background-image: url("src\assets\white-brush2.png");
   background-size: 85rem 15rem;
   background-position-y: center;
@@ -34,6 +28,7 @@
 
 h5 {
   margin-right: 3rem;
+  margin-top: 3rem;
   font-family: "SF Mono", sans-serif;
 }
 
@@ -41,6 +36,12 @@ a {
   cursor: pointer;
   font-size: x-large;
   margin-right: 5%;
+}
+
+#quit-btn {
+  text-decoration: none;
+  outline: none;
+  color:rgba(0, 0, 0, 0.871);
 }
 
 img {
@@ -52,7 +53,7 @@ img:hover {
   filter: grayscale(100%) contrast(175%);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
   h5 {
     display: none;
@@ -63,4 +64,4 @@ img:hover {
     padding: 3rem;
   }
 
-}
+} */

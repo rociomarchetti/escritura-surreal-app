@@ -3,10 +3,10 @@
 </video>
 
 <div class="container-fluid create-container">
-  <form [formGroup]="newTextForm" (ngSubmit)="saveText()" class="container m-5" #myForm="ngForm">
+  <form [formGroup]="newTextForm" (ngSubmit)="saveText()" class="container-fluid m-5" #myForm="ngForm">
     <div class="row">
-      <div class="col-3"></div>
-      <div class="col-6 text-center" id="mask">
+      <div class="col-0 col-md-3"></div>
+      <div class="col-10 col-md-6 text-center" id="mask">
         <div class="mb-3">
           <label for="inputSentence" class="form-label"
             >Escribe el comienzo de la historia</label
@@ -40,7 +40,7 @@
           <button type="submit" class="btn btn-outline-light mt-5" [disabled]="!myForm.form.valid">Guardar</button>
         </div>
       </div>
-      <div class="col-3"></div>
+      <div class="col-0 col-md-3"></div>
     </div>
   </form>
 </div>

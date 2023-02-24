@@ -1,12 +1,13 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-6 ms-2">
+  <div class="d-flex flex-column flex-md-row">
+    <div class="col-12 col-md-4 p-3 mt-md-5 ms-md-5">
       <form [formGroup]="userForm" (ngSubmit)="login()" autocomplete="off">
         <div class="mb-3">
           <label for="inputEmail" class="form-label">Correo electrónico</label>
           <input
             type="email"
             class="form-control"
+            placeholder="rocio@mail.com"
             id="inputEmail"
             formControlName="email"
           />
@@ -19,6 +20,7 @@
           <input
             type="password"
             class="form-control"
+            placeholder="1234"
             id="inputPassword"
             formControlName="password"
           />
@@ -33,7 +35,7 @@
         </div>
       </form>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-md-6 p-3 mt-md-5 ms-md-5">
       <video poster="../../../assets/puerta_captura.png" autoplay loop>
         <source src="../../../assets/puerta.mp4" type="video/mp4" />
       </video>

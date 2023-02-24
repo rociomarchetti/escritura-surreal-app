@@ -156,6 +156,10 @@
         {
           "userId": "lrupFcc",
           "sentence": "probablemente por lo de esos vagones que acaban de explotar allá lejos llenando toda la atmósfera de confetis"
+        },
+        {
+          "userId": "0EHRs0a",
+          "sentence": "me llenaron la sala de estar."
         }
       ]
     },
@@ -227,6 +231,17 @@
         {
           "userId": "drT-imw",
           "sentence": "Qué habrá sido de aquel elefante que solía balancearse sobre la tela de una araña"
+        }
+      ]
+    },
+    {
+      "id": "JIJww69",
+      "category": "Pasado",
+      "date": "February 16th 2023",
+      "sentences": [
+        {
+          "userId": "0EHRs0a",
+          "sentence": "Ayer sali de fiesta y no volví a casa porque no estaba muy católico"
         }
       ]
     }

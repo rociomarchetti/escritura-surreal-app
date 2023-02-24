@@ -6,7 +6,7 @@ form {
 }
 
 .create-container {
-  position: fixed;  
+  position: fixed;
 }
 
 video {
@@ -16,14 +16,13 @@ video {
 }
 
 #mask {
-    background: rgba(0, 0, 0, 0.658);
-    color: #f1f1f1;
-    font-size: x-large;
-    margin-left: 3rem;
-    padding: 20px;
+  background: rgba(0, 0, 0, 0.658);
+  color: #f1f1f1;
+  font-size: x-large;
+  padding: 20px;
 }
 
 span {
   font-size: smaller;
-  font-family: 'SF Mono', sans-serif;
+  font-family: "SF Mono", sans-serif;
 }

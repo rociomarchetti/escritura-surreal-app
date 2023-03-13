@@ -2,7 +2,7 @@
 
 This is web application where we can play to what surrealists artists (back in 1920's) called "Cadavre exquis": a game in which players write in turns on a sheet of paper, fold to conceal what they have written, and pass it on to the next player – but adapted so that we can play it online!
 
-### [Deployed Link](https://escritura-surreal.netlify.app/)
+### [Deployed Link](https://app-escritura-demo.netlify.app/)
 
 ## **Preview**
 

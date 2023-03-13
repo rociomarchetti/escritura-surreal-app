@@ -5,7 +5,8 @@ This is web application where we can play to what surrealists artists (back in 1
 ### [Deployed Link](https://escritura-surreal.netlify.app/)
 
 ## **Preview**
-## ![preview gif](https://github.com/rociomarchetti/escritura-surreal-app/blob/main/src/assets/grabacion.gif)
+
+https://user-images.githubusercontent.com/98389214/224742480-f00c8be7-4b2f-4e11-89e5-74b02cd8c037.mp4
 
 ## :wrench: **Tech used in this project**
 
